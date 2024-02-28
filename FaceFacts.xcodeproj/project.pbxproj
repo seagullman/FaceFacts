@@ -8,17 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		C726788F2B8E5CDA009D48DE /* FaceFactsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C726788E2B8E5CDA009D48DE /* FaceFactsApp.swift */; };
-		C72678912B8E5CDA009D48DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72678902B8E5CDA009D48DE /* ContentView.swift */; };
+		C72678912B8E5CDA009D48DE /* PersonListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72678902B8E5CDA009D48DE /* PersonListView.swift */; };
 		C72678932B8E5CDB009D48DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C72678922B8E5CDB009D48DE /* Assets.xcassets */; };
 		C72678962B8E5CDB009D48DE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C72678952B8E5CDB009D48DE /* Preview Assets.xcassets */; };
+		C726789E2B8E5D42009D48DE /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = C726789D2B8E5D42009D48DE /* Person.swift */; };
+		C72678A12B8E6278009D48DE /* EditPersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72678A02B8E6278009D48DE /* EditPersonView.swift */; };
+		C72678A42B8E7684009D48DE /* PeopleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72678A32B8E7684009D48DE /* PeopleView.swift */; };
+		C72678A62B8E7D90009D48DE /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72678A52B8E7D90009D48DE /* Event.swift */; };
+		C72678A82B8E7F7C009D48DE /* EditEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72678A72B8E7F7C009D48DE /* EditEventView.swift */; };
+		C72678AB2B8EA313009D48DE /* Previewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72678AA2B8EA313009D48DE /* Previewer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C726788B2B8E5CDA009D48DE /* FaceFacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceFacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C726788E2B8E5CDA009D48DE /* FaceFactsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceFactsApp.swift; sourceTree = "<group>"; };
-		C72678902B8E5CDA009D48DE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C72678902B8E5CDA009D48DE /* PersonListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListView.swift; sourceTree = "<group>"; };
 		C72678922B8E5CDB009D48DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C72678952B8E5CDB009D48DE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C726789D2B8E5D42009D48DE /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		C72678A02B8E6278009D48DE /* EditPersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPersonView.swift; sourceTree = "<group>"; };
+		C72678A32B8E7684009D48DE /* PeopleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleView.swift; sourceTree = "<group>"; };
+		C72678A52B8E7D90009D48DE /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		C72678A72B8E7F7C009D48DE /* EditEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEventView.swift; sourceTree = "<group>"; };
+		C72678AA2B8EA313009D48DE /* Previewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Previewer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +63,12 @@
 		C726788D2B8E5CDA009D48DE /* FaceFacts */ = {
 			isa = PBXGroup;
 			children = (
+				C72678A92B8EA300009D48DE /* Utility */,
+				C72678A22B8E735A009D48DE /* Screens */,
 				C726788E2B8E5CDA009D48DE /* FaceFactsApp.swift */,
-				C72678902B8E5CDA009D48DE /* ContentView.swift */,
 				C72678922B8E5CDB009D48DE /* Assets.xcassets */,
+				C726789F2B8E626E009D48DE /* Custom Views */,
+				C726789C2B8E5D2C009D48DE /* Model */,
 				C72678942B8E5CDB009D48DE /* Preview Content */,
 			);
 			path = FaceFacts;
@@ -65,6 +80,41 @@
 				C72678952B8E5CDB009D48DE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C726789C2B8E5D2C009D48DE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C726789D2B8E5D42009D48DE /* Person.swift */,
+				C72678A52B8E7D90009D48DE /* Event.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C726789F2B8E626E009D48DE /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				C72678A32B8E7684009D48DE /* PeopleView.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		C72678A22B8E735A009D48DE /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				C72678A02B8E6278009D48DE /* EditPersonView.swift */,
+				C72678902B8E5CDA009D48DE /* PersonListView.swift */,
+				C72678A72B8E7F7C009D48DE /* EditEventView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		C72678A92B8EA300009D48DE /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				C72678AA2B8EA313009D48DE /* Previewer.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +187,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C72678912B8E5CDA009D48DE /* ContentView.swift in Sources */,
+				C726789E2B8E5D42009D48DE /* Person.swift in Sources */,
+				C72678A42B8E7684009D48DE /* PeopleView.swift in Sources */,
+				C72678912B8E5CDA009D48DE /* PersonListView.swift in Sources */,
+				C72678AB2B8EA313009D48DE /* Previewer.swift in Sources */,
 				C726788F2B8E5CDA009D48DE /* FaceFactsApp.swift in Sources */,
+				C72678A62B8E7D90009D48DE /* Event.swift in Sources */,
+				C72678A12B8E6278009D48DE /* EditPersonView.swift in Sources */,
+				C72678A82B8E7F7C009D48DE /* EditEventView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
